@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
+ * main - Entry points of code
  *
- *
- *
+ * Return 0 (Success)
  */
 int main(void)
 {
@@ -14,7 +14,7 @@ int main(void)
 		putchar(n);
 		n++;
 	}
-	while (m <=90)
+	while (m <= 90)
 	{
 		putchar(m);
 		m++;
