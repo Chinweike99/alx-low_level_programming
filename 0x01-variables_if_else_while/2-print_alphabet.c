@@ -2,15 +2,15 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry point of code 
+ * main - Entry point of code
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	char ch = 'a';
-	for (; ch <= 'z'; ch++) 
-	
+
+	for (; ch <= 'z'; ch++)
 	{
 		printf("%c", ch);
 	}
