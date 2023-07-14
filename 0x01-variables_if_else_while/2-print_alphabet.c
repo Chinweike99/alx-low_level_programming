@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	char ch = 'z';
-	for (; ch >= 'a'; ch--) 
+	char ch = 'a';
+	for (; ch <= 'z'; ch++) 
 	{
 		printf("%c\n", ch);
 	}
