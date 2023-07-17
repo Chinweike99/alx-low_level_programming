@@ -14,13 +14,11 @@ int main(void)
 		{
 			putchar('0');
 			putchar('0' + n);
-			putchar(',');
 		}
 		else
 		{
 			putchar('0' + (n / 10));
 			putchar('0' + (n % 10));
-			putchar(',');
 		}
 	}
 	putchar('\n');
