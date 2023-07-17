@@ -8,9 +8,9 @@ int main(void)
 {
 	int n;
 
-	for(n = 0; n <= 99; n++)
+	for (n = 0; n <= 99; n++)
 	{
-		if(n < 10)
+		if (n < 10)
 		{
 			putchar('0');
 			putchar('0' + n);
