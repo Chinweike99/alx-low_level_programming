@@ -1,10 +1,11 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * print_alphabet - Check the codes
+ * print_alphabet - Entry point
  *
  * Return: Always 0
  */
+
 void print_alphabet(void)
 {
 	char c = 'a';
