@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
  * Main - Check the codes
@@ -7,11 +7,12 @@
  */
 void print_alphabet(void)
 {
-	int a;
+	char c = 'a';
 
-	for (a = 97; a <= 122; a++)
+	while (c <= 'z')
 	{
-		putchar(a);
+		_putchar(c);
+		c++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
