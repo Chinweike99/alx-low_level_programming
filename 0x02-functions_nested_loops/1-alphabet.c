@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * Main - Check the codes
+ * print_alphabet - Check the codes
  *
  * Return: Always 0
  */
