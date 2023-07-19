@@ -4,7 +4,7 @@
  * print_times_table - a function that prints the n times table, starting with 0.
  * @n: number of thr time table
  */
-void print_times_table(int n)
+void printtimes_table(int n)
 {
 	int i, j, k;
 
