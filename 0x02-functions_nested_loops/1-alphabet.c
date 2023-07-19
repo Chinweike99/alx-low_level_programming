@@ -1,18 +1,20 @@
 #include "main.h"
+
+/* Prints a-z to std1 and \n */
+
 /**
- * print_alphabet - Entry point
+ * print_alphabet - prints a-z
  *
- * Return: Always 0
+ * Return: return type is void
  */
 
 void print_alphabet(void)
 {
-	char c = 'a';
+	int i;
 
-	while (c <= 'z')
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putchar(c);
-		c++;
+		_putchar(i);
 	}
 	_putchar('\n');
 }
