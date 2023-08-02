@@ -12,7 +12,7 @@ int is_palindrome(char *s)
 
 	for (i = 0; i < l; i++)
 	{
-		if (l == s[i])
+		if (l-- == s[i])
 		{
 			return (1);
 		}
