@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
- * _numargs - entry Point
+ * main - entry Point
  * @argc: Takes the number of Arguments
  * @argv: Takes the string of the Arguments
  * Return: Always 0 success
  */
-int _numargs(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	(void)*argv;
-	printf("%d", argc);
+	printf("%d\n", argc);
 	return (0);
 }
