@@ -14,10 +14,14 @@ void free_grid(int **grid, int height)
 	int i;
 	int j;
 
+	if (**grid <= 0)
+	{
+		printf("NULL");
+	}
 	for (i = 0; i <= height; i++)
 	{
-		ptr[i] = (int *)malloc(height * sizeof(int));
-		if (ptr[i] == NULL)
+		ptr = (int **)malloc(height * sizeof(int));
+		if (ptr == NULL)
 		{
 			for (j = 0; j < i;  j++)
 			{
