@@ -9,15 +9,8 @@
 void *malloc_checked(unsigned int b)
 {
 	int *ptr;
-	unsigned int i;
-	unsigned int j;
 
-	j = 6;
-	ptr = malloc(b * sizeof(int));
-	for (i = 0; i < j; i++)
-	{
-		printf("%u", i);
-	}
+	ptr = (int *) malloc(b * sizeof(int));
 	if (ptr == NULL)
 	{
 		exit(98);
