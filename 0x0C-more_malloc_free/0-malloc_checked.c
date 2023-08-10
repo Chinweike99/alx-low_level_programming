@@ -13,7 +13,7 @@ void *malloc_checked(unsigned int b)
 	unsigned int j;
 
 	j = 6;
-	ptr = malloc(b);
+	ptr = malloc(b * sizeof(int));
 	for (i = 0; i < j; i++)
 	{
 		printf("%u", i);
