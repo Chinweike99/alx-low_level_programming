@@ -1,3 +1,5 @@
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdio.h>
 /**
  * main - ENtry Point
@@ -5,6 +7,7 @@
  */
 int main(void)
 {
-	printf("%s", __FILE__);
+	printf("%s\n", __FILE__);
 	return (0);
 }
+#endif
