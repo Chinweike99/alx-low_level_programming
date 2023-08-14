@@ -3,8 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * struct: datatype
  * init_dog - Variable name
- * @d: Value of struct dog
  * @name: name of dog
  * @age: Float value for age
  * @owner: Name of owner
