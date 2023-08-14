@@ -2,24 +2,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 /**
  * main - Entry point
  * Return: return mul on success
  */
-int main(void)
+int main(int argc, char *argv[])
 {
 	int num1;
 	int num2;
-	int mul;
+	int result;
 
-	mul = num1 * num2;
-	if (num1 == NULL && num2 == NULL)
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
+	result = num1 * num2;
+	if (argc != 3)
 	{
-		_putchar(NULL);
+		printf("Error\n");
+		return 98;
 	}
-	if ((num1 < 48 || num1 > 57) && (num2 < 48 || num2 > 57))
+	if (!is_positive_integer(argv[1]) || !is_positive_integer(argv[2]))
 	{
-		return (0);
+		printf("Error\n");
+		return 98;
 	}
-	return (mul);
+	printf("%d\n", result);
+	return 0;
 }
