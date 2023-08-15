@@ -6,7 +6,6 @@
  *
  * Return: Always 0.
  */
-dog_t *new_dog(char *name, float age, char *owner);
 int main(void)
 {
     dog_t *my_dog;
