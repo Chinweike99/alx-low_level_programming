@@ -6,6 +6,13 @@
  *
  * Return: Always 0.
  */
+struct dog_t
+{
+	char *name;
+	float age;
+	char *owner;
+};
+
 int main(void)
 {
     dog_t *my_dog;
