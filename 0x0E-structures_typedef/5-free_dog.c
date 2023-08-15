@@ -12,7 +12,6 @@ typedef struct dog
 } dog_t;
 void free_dog(dog_t *d)
 {
-	d = malloc (sizeof(dog_t));
 	if (d != NULL)
 	{
 		free(d->name);
