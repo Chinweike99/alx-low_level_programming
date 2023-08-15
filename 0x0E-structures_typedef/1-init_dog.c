@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "dog.h"
 /**
  * struct: datatype
  * init_dog - Variable name
