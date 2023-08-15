@@ -3,6 +3,8 @@
 /**
  * _strlen - returns the length of a string
  * @s: string to evaluate
+ * _strcpy - string to copy
+ * new_dog - function to free the dog
  * Return: the length of the string
  */
 int _strlen(char *s)
