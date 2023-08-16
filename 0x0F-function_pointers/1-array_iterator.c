@@ -7,7 +7,7 @@
  */
 int array(int num)
 {
-	printf("%d", num);
+	printf("%d\n", num);
 	return (0);
 }
 
@@ -24,6 +24,5 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	for (i = 0; i < size; i++)
 	{
 		action(array[i]);
-		printf("\n");
 	}
 }
