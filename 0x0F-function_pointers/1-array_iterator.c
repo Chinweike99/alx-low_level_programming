@@ -19,11 +19,11 @@ int array(int num)
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	long unsigned int i;
 
 	for (i = 0; i < size; i++)
 	{
 		action(array[i]);
-		_putchar('\n');
+		printf("\n");
 	}
 }
