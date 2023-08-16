@@ -8,7 +8,7 @@
 int array(int num)
 {
 	printf("%d\n", num);
-	return (0);
+	return (num);
 }
 
 /**
