@@ -20,19 +20,13 @@ int content(int a)
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
-	int b;
 
-	b = 0;
+	if (array == NULL || cmp == NULL)
+		return (-1);
 	for (i = 0; i < size; i++)
 	{
-		if (b < 48 && b > 57)
-		{
-			return (b);
-		}
-		return (-1);
+		if (cmp(array[i]))
+			return (i);
 	}
-	if (cmp(array[i]) == 0 && size <= 0)
-		return (-1);
-	return (0);
-
+	return (-1);
 }
