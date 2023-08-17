@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "function_pointers.h"
+#include <stdlib.h>
 /**
  * array - Function to ececute on each element
  * @num: executing arg
