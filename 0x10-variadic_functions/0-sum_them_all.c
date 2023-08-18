@@ -3,8 +3,6 @@
 /**
  * sum_them_all - function that returns the sum of all its parameters.
  * @n: The first parameter
- * @all: Name of list
- * @k: For loop
  *
  * Return: Return sum
  */
