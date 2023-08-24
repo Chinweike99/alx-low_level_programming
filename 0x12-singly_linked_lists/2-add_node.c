@@ -27,7 +27,7 @@ list_t *add_node(list_t **head, const char *str)
 	return (*head);
 }
 /**
- * my_len - Function that takes the length of the node
+ * len - Function that takes the length of the node
  * @str: The string to the pointer
  * Return: Length of node
  */
