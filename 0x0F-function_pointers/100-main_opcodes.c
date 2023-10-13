@@ -1,40 +1,35 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "function_pointers.h"
 /**
- * main - The entry point
- * @argc: first arguemnet
- * @argv: Second arguement
- * Return: Return a value on success
  */
-int main(int argc, char *argv[])
+void print_opcodes(int num)
 {
-	int i;
+	unsigned char *ptr = (unsigned char *)print_opcodes;
+	int i = 0;
 
-	if (argc != 2)
+	while (i < num)
 	{
-		printf("Error\n");
-		return (1);
-	}
-
-	int num_bytes = atoi(argv[1]);
-
-	if (num_bytes < 0)
-	{
-		printf("Error\n");
-		return (2);
-	}
-	unsigned char *main_ptr = (unsigned char *)main;
-
-	for (i = 0; i < num_bytes; i++)
-	{
-		printf("%02x", main_ptr[i]);
-		if (i < num_bytes - 1)
-		{
-			printf(" ");
-		}
-
+		printf("%02x", ptr[i]);
+		i++;
 	}
 	printf("\n");
+}
+
+/**
+ */
+
+int main (int argc, char *argv[])
+{
+	if (argc != 2)
+	{
+		return (-1);
+	}
+	int num = atoi(argv[1]);
+
+	if (num < 0)
+	{
+		return (-1);
+	}
+	_print_opcodes(num);
+
 	return (0);
 }
