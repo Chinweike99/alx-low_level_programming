@@ -1,0 +1,1 @@
+0x17. C - Doubly linked list: In this task i learnt how ro create a doubly linked list, add a node to the beginning,end, and at any position of a DLL. Also learnt how to delete a node at the begining, end and at any position in a DLL. FInally i learnt how to reverse a DLL
